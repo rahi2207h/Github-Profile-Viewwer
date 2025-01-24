@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Github Profile VIewwer</h2>
+            <input type="text" id="user"><br><br>
+            <button onclick="profile()" >Check</button><br><br><br>
+            <a href="" id="ans"></a>
+        </div>
+    </div>
+
+    <script>
+        let input = document.getElementById("user");
+        let ans = document.getElementById("ans");
+
+        function profile(){
+            ans.href = "https://github.com/" + input.value;
+            document.getElementById("ans").innerHTML = "View Profile";
+        }
+    </script>
+</body>
+</html>
